@@ -22,16 +22,15 @@ class IKEATableViewController: UITableViewController {
         
         //Create and instance of UITableViewCell
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath) as! IKEACell
         
         //set the text on the cell with the name of the store
         let item = IKEABucket.allIKEAs[indexPath.row]        
-        cell.textLabel?.text = item.storeName
         
+        cell.locationName.text = item.storeName
+        cell.City.text = item.city
         if (item.smaland == true) {
-            cell.detailTextLabel?.text = "Kid Friendly"
-        }else {
-            cell.detailTextLabel?.text = ""
+            cell.smalandImage.image = UIImage(named: "SmalandIcon")
         }
         
         return cell

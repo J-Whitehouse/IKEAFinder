@@ -8,7 +8,11 @@
 import UIKit
 
 class IKEACell: UITableViewCell {
-    @IBOutlet var locationName: UILabel?
-    @IBOutlet var smalandImage: UIImageView?
+    
+    //MARK: Outlets
+    
+    @IBOutlet var locationName: UILabel!
+    @IBOutlet var smalandImage: UIImageView!
+    @IBOutlet var City: UILabel!
     
 }
