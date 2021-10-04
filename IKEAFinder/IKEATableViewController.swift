@@ -36,6 +36,14 @@ class IKEATableViewController: UITableViewController {
         return cell
     }
     
+    //MARK: Event Lifecycle functions
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //Populate core data
+        IKEABucket.populateCoreData()
+    }
+    
     //MARK: Select IKEA
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

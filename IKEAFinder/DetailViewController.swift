@@ -32,21 +32,21 @@ class DetailViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         //MARK: Assign to outlets
-        storeName.text = "Storename: " + selectedIKEA.storeName
-        Address.text = "Address: " + selectedIKEA.address
-        City.text = "City: " + selectedIKEA.city
-        ZIP.text = "Zip: " + selectedIKEA.zipCode
-        Telephone.text = "Telephone: " + selectedIKEA.telephone
+        storeName.text = "Storename: " + selectedIKEA.storeName!
+        Address.text = "Address: " + selectedIKEA.address!
+        City.text = "City: " + selectedIKEA.city!
+        ZIP.text = "Zip: " + selectedIKEA.zipCode!
+        Telephone.text = "Telephone: " + selectedIKEA.telephone!
         StoreNumber.text = "StoreNumber: " + String(selectedIKEA.storeNumber)
-        Country.text = "Country: " + selectedIKEA.country
+        Country.text = "Country: " + selectedIKEA.country!
         Size.text = "Size: " + String(selectedIKEA.size)
         RoomSettings.text = "Room Settings: " + String(selectedIKEA.roomSettings)
         RealLifeHomes.text = "Real Life Homes: " + String(selectedIKEA.realLifeHomes)
         CashLanes.text = "Cash Lanes: " + String(selectedIKEA.cashLanes)
         RestaurantSeating.text = "Restaurant Seating: " + String(selectedIKEA.restaurantSeating)
         Smaland.text = "Smaland: " + String(selectedIKEA.smaland)
-        Webpage.text = "Webpage: " + selectedIKEA.webpage
-        StoreImage.text = "Store Image: " + selectedIKEA.storeImage
+        Webpage.text = "Webpage: " + selectedIKEA.webpage!
+        StoreImage.text = "Store Image: " + selectedIKEA.storeImage!
         
         }
     
