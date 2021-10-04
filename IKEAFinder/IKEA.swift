@@ -8,7 +8,7 @@
 import Foundation
 import MapKit
 
-class IKEA: NSObject, MKAnnotation {
+class IKEAx: NSObject, MKAnnotation {
     
     var coordinate: CLLocationCoordinate2D
     var title: String?
